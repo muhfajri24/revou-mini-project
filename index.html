@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Fajri | Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">MF</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#profile">Our Profile</a>
+      <a href="https://github.com/muhfajri24?tab=repositories" target="_blank">Portfolio ↗</a>
+      <a href="#message">Message Us</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <h1 id="welcomeText">Hi, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama Muhammad Fajri</p>
+  </div>
+</section>
+
+<section id="profile" class="headquarter">
+  <h2>Our Headquarter</h2>
+  <div class="hq-container">
+
+    <div class="hq-item">
+      <div class="circle jakarta"></div>
+      <p>Jakarta</p>
+    </div>
+
+    <div class="hq-item">
+      <div class="circle bandung"></div>
+      <p>Bandung</p>
+    </div>
+
+    <div class="hq-item">
+      <div class="circle surabaya"></div>
+      <p>Surabaya</p>
+    </div>
+
+    <div class="hq-item">
+      <div class="circle gresik"></div>
+      <p>Gresik</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="message" class="message-section">
+  <h2>Message Us</h2>
+
+  <div class="message-container">
+    <form id="contactForm">
+      <label>Nama</label>
+      <input type="text" id="nama">
+
+      <label>Tanggal Lahir</label>
+      <input type="date" id="tanggal">
+
+      <label>Jenis Kelamin</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Laki-Laki"> Laki-Laki</label>
+        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+      </div>
+
+      <label>Pesan</label>
+      <textarea id="pesan"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="result-box">
+      <h3>Submission Result</h3>
+      <div id="result"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Muhammad Fajri</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
