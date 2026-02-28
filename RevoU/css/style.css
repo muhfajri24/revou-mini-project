@@ -1,0 +1,146 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+  color:#333;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#111827;
+}
+
+.logo{
+  background:#4f46e5;
+  color:white;
+  padding:10px 15px;
+  border-radius:50%;
+  font-weight:bold;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:25px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#4f46e5;
+}
+
+/* HERO */
+.hero{
+  height:70vh;
+  background:linear-gradient(to right,#4f46e5,#9333ea);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+
+/* HEADQUARTER */
+.headquarter{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.hq-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  gap:40px;
+  margin-top:40px;
+}
+
+.circle{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  background-size:cover;
+  background-position:center;
+  margin:auto;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.circle:hover{
+  transform:scale(1.05);
+}
+
+.jakarta{ background-image:url("../images/jkt.jpg"); }
+.bandung{ background-image:url("../images/bandung.jpg"); }
+.surabaya{ background-image:url("../images/sby.jpg"); }
+.gresik{ background-image:url("../images/grsk.jpg"); }
+
+/* MESSAGE */
+.message-section{
+  padding:80px 10%;
+  background:white;
+}
+
+.message-container{
+  display:flex;
+  gap:50px;
+  margin-top:40px;
+}
+
+form{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input, textarea{
+  padding:12px;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+textarea{ height:100px; }
+
+button{
+  padding:12px;
+  background:#4f46e5;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#3730a3;
+}
+
+.result-box{
+  flex:1;
+  background:#f9fafb;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111827;
+  color:white;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .message-container{
+    flex-direction:column;
+  }
+}
